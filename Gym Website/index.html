@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie-edge">
+    <meta name="keywords" content="gym,fitness,body,heavy weight">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <link href="member/member.html">
+    <link href="info/info.html">
+    <title>GYM</title>
+</head>
+<style>
+    body {
+        margin: auto;
+        width: auto;
+        background: url('img/imgb.jpg') no-repeat center center fixed;
+    }
+</style>
+
+<body>
+
+    <header class="header">
+        <div class="left">
+            <img src="img/logo.png" alt="" class="logo">
+            <div class="lgname">
+                Fitness Zone
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <form action="member/member.html" class="memberbtn">
+                <button class="btn" target="_blank">Become Member</button>
+            </form>
+            <form action="info/info.html" class="infobtn">
+                <button class="btn" id="info">Info</button>
+            </form>
+        </div>
+    </header>
+    <div class="container">
+        <form action="backend.php">
+            <div class="frm">
+                <label for="name">Name:</label>
+                <input type="text" name="myName" id="name" placeholder="Enter your name">
+            </div>
+            <div class="frm">
+                <label for="email">E-Mail:</label>
+                <input type="email" name="myMail" id="email" placeholder="Enter your mail">
+            </div>
+            <div class="frm">
+                <!-- Gender: -->
+                <label for="gender">Male</label>
+                <input type="radio" name="myGender" id="gender">
+                <label for="fem">Female</label>
+                <input type="radio" name="myGender" id="fem">
+
+            </div>
+            <div class="frm">
+                <label for="contact">Contact No.:</label>
+                <input type="text" name="myNumber" id="contact" placeholder="Enter your contact">
+            </div>
+            <div class="frm">
+                <input type="Submit" value="Submit" class="final">
+                <input type="Reset" value="Reset" class="final">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
